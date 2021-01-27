@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+body {
+    color: rgba(0,0,0,0.87);
+    font-family: arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+.app-icon {
+    height: 20px;
+    width: 20px;
+    margin: 0 15px;
+}
+
+.avatar-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px 0 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+a:visited {
+    color: rgb(61, 61, 61);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#g-logo {
+    padding: 45px 0 30px 0;
+
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+#search {
+    display: flex;
+    border: 1px gainsboro solid;
+    padding: 5px 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+#search:hover {
+    box-shadow: 0 0 7px gainsboro;
+}
+
+#content input {
+    height: 35px;
+    border: none;
+    font-size: 1.2rem;
+    width: 530px;
+}
+
+#content input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+input[type=submit] {
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #f8f9fa;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid white;;
+    cursor: pointer;
+}
+
+#form-p {
+    font-size: small;
+}
+#form-p a{
+    text-decoration: none;
+}
+
+#form-p a:hover {
+    text-decoration-line: underline;
+}
+
+#form-p a:visited {
+    color: #1a0dab;
+}
+
+input[type=submit]:hover {
+    border: solid 1px gainsboro;
+}
+
+footer p {
+    background-color: #f2f2f2;
+    border-top: 1px solid gainsboro;
+    padding: 12px 25px;
+}
+
+footer .bottom-nav {
+    background-color: #f2f2f2;
+    border-top: 1px solid gainsboro;
+    padding: 13px 25px;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 10px 25px 10px 0;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    cursor:pointer;
+}
+@media (max-width:805px) {
+    .bottom-nav {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer a {
+        display: inline-block;
+        padding: 9px;
+    }
+}
